@@ -1,38 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 150px;
+}
+
+header, footer{
+    background: yellow;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    background: cyan;
+}
+
 div{
-    margin: 20px;
-}
-
-.px{
-    width: 100px;
+    width: 20%;
     height: 100px;
-    background: red;
 }
 
-.vh{
-    width: 100px;
-    height: 20vh;
-    background: green;
+.one{
+    background-color: chartreuse;
 }
 
-.vw{
-    width: 20vw;
-    height: 100px;
-    background: blue;
+.two{
+    background-color: chocolate;
 }
 
-@media screen and (max-width: 500px) {
-    /* CSS */
+.three{
+    background-color: cornflowerblue;
 }
 
-@media screen and (orientation: landscape) {
-    /* Styles for the landscape orientation */
+footer{
+    width: 100%;
+    height: 150px;
 }
 
-@media screen and (orientation: portrait) {
-    /* Styles for the portrait orientation */
-}
+@media screen and (max-width:425px){
+    
+    section{
+        flex-direction: column;
+    }
+    div{
+        margin-top: 10px;
+        margin-bottom: 15px;
+        width: 300px;
+    }
 
-@media screen and (min-width: 320px),
-screen and (max-width: 425px) {
-    /* Styles for the certain range of values */
+    
 }
